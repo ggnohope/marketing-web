@@ -1,17 +1,31 @@
-import React from 'react';
-import './Faq.css'; // Import CSS file
-import {menuItems} from "../Assets/data"
-import AccordionMenu from './AccordionMenu';
+import { Box, Container, Typography } from "@mui/material";
+import { menuItems } from "../Assets/data";
+import AccordionMenu from "./AccordionMenu";
 
-// Example usage
-function Faq() {
-
+const Faq = () => {
   return (
-    <div className='accordion_wrapper'>
-      <h1>Frequently Asked Questions</h1>
-      <AccordionMenu items={menuItems} />
-    </div>
+    <Box
+      sx={{
+        py: 8,
+        backgroundColor: "white",
+      }}
+    >
+      <Container maxWidth="md">
+        <Typography
+          variant="h3"
+          sx={{
+            textAlign: "center",
+            fontWeight: 700,
+            mb: 6,
+            fontSize: { xs: "2rem", md: "2.5rem" },
+          }}
+        >
+          Frequently Asked Questions
+        </Typography>
+        <AccordionMenu items={menuItems} />
+      </Container>
+    </Box>
   );
-}
+};
 
 export default Faq;

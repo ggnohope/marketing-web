@@ -1,17 +1,14 @@
-import About from "./Components/About/About"
-import Contact from "./Components/Contact/Contact"
-import Home from "./Components/Home/Home"
-import Navbar from "./Components/Navbar/Navbar"
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Home from "./Components/Home/Home";
+import Navbar from "./Components/Navbar/Navbar";
 // import Pricing from "./Components/Pricing/Pricing"
-import Service from "./Components/Services/Service"
-import Feedback from "./Components/Feedback/Feedback"
-import Faq from "./Components/FAQ/Faq"
-import Footer from "./Components/Footer/Footer"
-import More from "./Components/More/More"
-
+import Service from "./Components/Services/Service";
+import Feedback from "./Components/Feedback/Feedback";
+import Faq from "./Components/FAQ/Faq";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-
   return (
     <>
       <Navbar />
@@ -20,12 +17,11 @@ function App() {
       <Service />
       <Feedback />
       <Faq />
-      <More />
       <Contact />
       <Footer />
       {/* <Pricing /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
