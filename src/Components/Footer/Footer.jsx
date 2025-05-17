@@ -21,16 +21,15 @@ const Footer = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} md={5}>
             <Typography variant="h5" sx={{ fontWeight: 700, mb: 2 }}>
-              INFIGIO
+              Sửa chữa điện Phương Vinh
             </Typography>
             <Typography
               variant="body2"
               sx={{ mb: 3, color: "rgba(255,255,255,0.8)" }}
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Perspiciatis quam natus dolor consequuntur, cupiditate labore
-              velit eos accusamus quibusdam, minima dolorem ipsa. Cupiditate
-              doloremque repellat nam, voluptas ipsum odit nihil!
+              Sửa chữa điện Phương Vinh chuyên lắp đặt và bảo trì máy lạnh, hệ
+              thống điện, hệ thống xây dựng và lắp đặt thang máy gia đình tại
+              TP.HCM.
             </Typography>
             <Stack direction="row" spacing={2}>
               <IconButton color="inherit" sx={{ color: "white" }}>
@@ -46,33 +45,33 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} md={3}>
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
-              COMPANY
+              CÔNG TY
             </Typography>
             <Stack component="ul" spacing={1} sx={{ pl: 0, listStyle: "none" }}>
               <Typography component="li" variant="body2">
-                Home
+                Trang chủ
               </Typography>
               <Typography component="li" variant="body2">
-                About Us
+                Giới thiệu
               </Typography>
               <Typography component="li" variant="body2">
-                Services
+                Dịch vụ
               </Typography>
               <Typography component="li" variant="body2">
-                Privacy policy
+                Chính sách bảo mật
               </Typography>
             </Stack>
           </Grid>
           <Grid item xs={12} md={4}>
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
-              GET IN TOUCH
+              LIÊN HỆ
             </Typography>
             <Stack component="ul" spacing={1} sx={{ pl: 0, listStyle: "none" }}>
               <Typography component="li" variant="body2">
-                +23499686548
+                Điện thoại: 096 881 43 50
               </Typography>
               <Typography component="li" variant="body2">
-                contact@email.com
+                Địa chỉ: 278 Trần Phú, P7, Q5, TP HCM, Ho Chi Minh City, Vietnam
               </Typography>
             </Stack>
           </Grid>
@@ -83,7 +82,7 @@ const Footer = () => {
           align="center"
           sx={{ color: "rgba(255,255,255,0.7)" }}
         >
-          Copyright 2024 @Company. All right Reserved
+          Copyright 2024 © Sửa chữa điện Phương Vinh. All Rights Reserved.
         </Typography>
       </Container>
     </Box>

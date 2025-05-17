@@ -32,7 +32,7 @@ const More = () => {
                   href="#contact"
                   sx={{ borderRadius: 2, textTransform: "none", px: 4 }}
                 >
-                  Learn More
+                  Tìm hiểu thêm
                 </Button>
               </Box>
             ))}
@@ -41,7 +41,7 @@ const More = () => {
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={img}
-                alt="More Info"
+                alt="Thông tin thêm"
                 style={{
                   maxWidth: "100%",
                   borderRadius: 16,

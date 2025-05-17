@@ -54,7 +54,7 @@ const Feedback = () => {
               },
             }}
           >
-            Testimonials
+            Đánh giá của khách hàng
           </Typography>
           <Typography
             variant="h3"
@@ -68,22 +68,36 @@ const Feedback = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Here&apos;s what our satisfied clients have to say about our work
+            Đây là những nhận xét từ khách hàng hài lòng về dịch vụ của chúng
+            tôi
           </Typography>
         </Box>
 
         <Grid container spacing={4}>
           {feedback.map(({ image, name, company, comment }, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              key={index}
+              sx={{
+                display: "flex",
+              }}
+            >
               <Card
                 elevation={0}
                 sx={{
-                  height: "100%",
+                  width: "100%", // 👈 Đảm bảo card lấp đầy chiều rộng cột
+                  height: "100%", // 👈 Đảm bảo các card cùng chiều cao nếu cần
                   backgroundColor: "white",
                   borderRadius: 4,
                   border: "1px solid",
                   borderColor: "divider",
                   transition: "all 0.3s ease",
+                  display: "flex",
+                  flexDirection: "column",
+                  flexGrow: 1,
                   "&:hover": {
                     transform: "translateY(-8px)",
                     boxShadow: "0 20px 40px rgba(99,102,241,0.1)",
@@ -91,7 +105,14 @@ const Feedback = () => {
                   },
                 }}
               >
-                <CardContent sx={{ p: 4 }}>
+                <CardContent
+                  sx={{
+                    p: 4,
+                    display: "flex",
+                    flexDirection: "column",
+                    flexGrow: 1,
+                  }}
+                >
                   <Box
                     sx={{
                       display: "flex",
@@ -101,7 +122,7 @@ const Feedback = () => {
                   >
                     <Avatar
                       src={image}
-                      alt={name}
+                      alt={`Ảnh đại diện của ${name}`}
                       sx={{
                         width: 64,
                         height: 64,
@@ -151,16 +172,7 @@ const Feedback = () => {
                       fontStyle: "italic",
                       lineHeight: 1.8,
                       position: "relative",
-                      "&::before": {
-                        content: '"""',
-                        position: "absolute",
-                        top: -20,
-                        left: -10,
-                        fontSize: "4rem",
-                        color: "primary.main",
-                        opacity: 0.2,
-                        fontFamily: "serif",
-                      },
+                      flexGrow: 1,
                     }}
                   >
                     {comment}

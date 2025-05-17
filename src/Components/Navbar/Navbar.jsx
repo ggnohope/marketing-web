@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navlinks } from "../Assets/data";
+import logo from "../Assets/logo.jpg";
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -38,19 +39,19 @@ const Navbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo for desktop */}
-          <Typography
-            variant="h6"
-            noWrap
+          <Box
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontWeight: 800,
-              color: "primary.main",
-              textDecoration: "none",
+              height: 40, // Adjust height as needed
             }}
           >
-            Infigio
-          </Typography>
+            <img
+              src={logo}
+              alt="Sửa chữa điện Phương Vinh Logo"
+              style={{ height: "100%" }}
+            />
+          </Box>
 
           {/* Mobile menu */}
           {isMobile && (
@@ -121,20 +122,20 @@ const Navbar = () => {
           )}
 
           {/* Logo for mobile */}
-          <Typography
-            variant="h6"
-            noWrap
+          <Box
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontWeight: 800,
-              color: "primary.main",
-              textDecoration: "none",
+              height: 40, // Adjust height as needed
             }}
           >
-            Infigio
-          </Typography>
+            <img
+              src={logo}
+              alt="Sửa chữa điện Phương Vinh Logo"
+              style={{ height: "100%" }}
+            />
+          </Box>
 
           {/* Desktop menu */}
           <Box
@@ -179,7 +180,7 @@ const Navbar = () => {
                 fontWeight: 700,
               }}
             >
-              Contact us
+              Liên hệ
             </Button>
           </Box>
         </Toolbar>

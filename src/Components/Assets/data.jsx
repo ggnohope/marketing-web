@@ -4,94 +4,82 @@ import { FaCentos } from "react-icons/fa6";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { GrLinkNext } from "react-icons/gr";
 import m2 from "../Assets/m2.jpg";
-import img1 from "../Assets/img1.jpg";
 import img2 from "../Assets/img2.jpg";
 import img3 from "../Assets/img3.jpg";
+import dv1 from "../Assets/dv1.jpg";
+import dv2 from "../Assets/dv2.jpg";
+import dv3 from "../Assets/dv3.jpg";
+import dv4 from "../Assets/dv4.jpg";
 
 export const navlinks = [
-  { id: 1, title: "Home", link: "#home" },
-  { id: 1, title: "About", link: "#about" },
-  { id: 1, title: "Service", link: "#service" },
-  { id: 1, title: "Testimonials", link: "#feedback" },
+  { id: 1, title: "Trang chủ", link: "#home" },
+  { id: 1, title: "Giới thiệu", link: "#about" },
+  { id: 1, title: "Dịch vụ", link: "#service" },
+  { id: 1, title: "Đánh giá", link: "#feedback" },
 ];
+
 export const about = [
   {
     number: "01.",
-    head: "Digital Marketing",
-    text: "Drive traffics, leads and conversion with our tailored strategies",
+    head: "UY TÍN",
+    text: "Cam kết chất lượng dịch vụ với khách hàng",
   },
   {
     number: "02.",
-    head: "Email Marketing",
-    text: "Nurture leads and foster customers relationships through personalized campaigns",
+    head: "TẬN TÂM",
+    text: "Phục vụ khách hàng với tinh thần trách nhiệm cao",
   },
   {
     number: "03.",
-    head: "SEO Optimization",
-    text: "Increase your search visibility and rank heigher on search engines",
+    head: "CHUYÊN NGHIỆP",
+    text: "Đội ngũ kỹ thuật viên giàu kinh nghiệm",
   },
   {
     number: "04.",
-    head: "Social Media Management",
-    text: "Build a strong online presence and engage your audience",
+    head: "HỖ TRỢ 24/7",
+    text: "Sẵn sàng phục vụ khách hàng mọi lúc",
   },
 ];
 
 export const services = [
   {
     icon: <FaCentos />,
-    head: "Service 1",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
+    head: "Lắp đặt và bảo trì máy lạnh",
+    desc: "Dịch vụ lắp đặt và bảo trì máy lạnh chuyên nghiệp, đảm bảo hệ thống hoạt động ổn định và tiết kiệm điện năng",
+    action: "Chi tiết",
     link: <GrLinkNext />,
-    image: img1,
+    image: dv3,
   },
   {
     icon: <FaCentos />,
-    head: "Service 2",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
+    head: "Lắp đặt và bảo trì hệ thống điện",
+    desc: "Thiết kế và lắp đặt hệ thống điện dân dụng, công nghiệp với đội ngũ kỹ thuật viên chuyên môn cao",
+    action: "Chi tiết",
     link: <GrLinkNext />,
-    image: img2,
+    image: dv1,
   },
   {
     icon: <FaCentos />,
-    head: "Service 3",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
+    head: "Hệ thống xây dựng",
+    desc: "Cung cấp giải pháp xây dựng toàn diện, đảm bảo chất lượng và tiến độ thi công",
+    action: "Chi tiết",
     link: <GrLinkNext />,
-    image: img3,
+    image: dv2,
   },
   {
     icon: <FaCentos />,
-    head: "Service 4",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
+    head: "Lắp đặt thang máy gia đình",
+    desc: "Tư vấn và lắp đặt thang máy gia đình với công nghệ hiện đại, an toàn và tiết kiệm",
+    action: "Chi tiết",
     link: <GrLinkNext />,
-    image: m2,
-  },
-  {
-    icon: <FaCentos />,
-    head: "Service 5",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
-    link: <GrLinkNext />,
-    image: lady,
-  },
-  {
-    icon: <FaCentos />,
-    head: "Service 6",
-    desc: "A short description of the service your company provides and how it helps your clients business increase revenue using the technology and strategy your company provides",
-    action: "Explore",
-    link: <GrLinkNext />,
-    image: lady2,
+    image: dv4,
   },
 ];
 
 export const more = [
   {
-    head: "Business Has Only Two Function - Marketing And Innovation",
-    desc: "Type a very reassuring and encouraging text to keep clients elated and expect the best from you Type a very reassuring and encouraging text to keep clients elated and expect the best from you Type a very reassuring and encouraging text to keep clients elated and expect the best from you",
+    head: "Cam kết chất lượng dịch vụ",
+    desc: "Với phương châm 'Uy tín - Tận tâm - Trách nhiệm', chúng tôi cam kết mang đến cho khách hàng những dịch vụ chất lượng nhất, đảm bảo sự hài lòng tuyệt đối.",
   },
 ];
 
@@ -99,52 +87,76 @@ export const feedback = [
   {
     image: lady,
     icon: <RiDoubleQuotesL />,
-    name: "Dianne Russell",
-    company: "Company",
+    name: "Văn Thị Diễm",
+    company: "Khách hàng",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+      "Cần tìm đơn vị sửa chữa uy tín thì nên chọn bên này. Đội ngũ kỹ thuật viên chuyên nghiệp, tận tâm với khách hàng.",
   },
   {
     image: lady2,
     icon: <RiDoubleQuotesL />,
-    name: "Dianne Russell",
-    company: "Company",
+    name: "Đặng Đan",
+    company: "Khách hàng",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-  },
-  {
-    image: lady,
-    icon: <RiDoubleQuotesL />,
-    name: "Dianne Russell",
-    company: "Company",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+      "Dịch vụ nhanh chóng, giá cả hợp lý. Đội ngũ kỹ thuật viên nhiệt tình và chuyên nghiệp.",
   },
 ];
 
 export const menuItems = [
   {
-    title: "How do i get mobile app",
-    content: "Content for Section 1",
+    title: "Làm thế nào để đặt lịch dịch vụ?",
+    content:
+      "Bạn có thể liên hệ qua số hotline 096 881 43 50 hoặc inbox fanpage để được tư vấn và đặt lịch.",
   },
   {
-    title: "How do i contact support",
-    content: "Content for Section 2",
+    title: "Thời gian làm việc của công ty?",
+    content: "Chúng tôi phục vụ 24/7, sẵn sàng hỗ trợ khách hàng mọi lúc.",
   },
   {
-    title: "Ho do i track my growth",
-    content: "Content for Section 2",
+    title: "Có bảo hành dịch vụ không?",
+    content: "Tất cả các dịch vụ đều được bảo hành theo quy định của công ty.",
   },
   {
-    title: "Does Infigio have paid services",
-    content: "Content for Section 2",
+    title: "Khu vực phục vụ?",
+    content: "Chúng tôi phục vụ tại TP.HCM và các tỉnh lân cận.",
   },
   {
-    title: "How fast do i see result after using Infigio",
-    content: "Content for Section 2",
+    title: "Có nhận sửa chữa khẩn cấp không?",
+    content: "Có, chúng tôi có dịch vụ sửa chữa khẩn cấp 24/7.",
   },
   {
-    title: "Can i use Infigio for free",
-    content: "Content for Section 3",
+    title: "Có tư vấn miễn phí không?",
+    content:
+      "Có, chúng tôi tư vấn miễn phí cho khách hàng trước khi thực hiện dịch vụ.",
+  },
+];
+
+export const pricing = [
+  {
+    plan: "Gói Cơ Bản",
+    price: "Liên hệ",
+    features: [
+      "Sửa chữa điện dân dụng cơ bản",
+      "Lắp đặt quạt trần, đèn chiếu sáng",
+      "Kiểm tra an toàn hệ thống điện",
+    ],
+  },
+  {
+    plan: "Gói Nâng Cao",
+    price: "Liên hệ",
+    features: [
+      "Sửa chữa, bảo trì máy lạnh",
+      "Lắp đặt hệ thống điện âm tường",
+      "Tư vấn giải pháp tiết kiệm điện",
+    ],
+  },
+  {
+    plan: "Gói Toàn Diện",
+    price: "Liên hệ",
+    features: [
+      "Thi công hệ thống điện, nước cho công trình",
+      "Lắp đặt và bảo trì thang máy gia đình",
+      "Giải pháp nhà thông minh",
+    ],
   },
 ];

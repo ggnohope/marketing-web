@@ -135,7 +135,7 @@ const About = () => {
                   },
                 }}
               >
-                About Us
+                Giới Thiệu
               </Typography>
               <Typography
                 variant="h3"
@@ -149,7 +149,7 @@ const About = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                We Give The Best Solution To Grow Up your business
+                Chuyên gia điện lạnh và xây dựng đáng tin cậy của bạn
               </Typography>
               <Typography
                 variant="body1"
@@ -160,8 +160,9 @@ const About = () => {
                   lineHeight: 1.8,
                 }}
               >
-                We have all hands on deck to provide you with the best service
-                that suits your business
+                Với đội ngũ kỹ thuật viên giàu kinh nghiệm và tận tâm, chúng tôi
+                cam kết mang đến giải pháp tối ưu và dịch vụ chuyên nghiệp cho
+                mọi nhu cầu về điện, lạnh và xây dựng của bạn.
               </Typography>
             </Box>
             <Grid container spacing={3}>

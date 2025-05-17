@@ -57,7 +57,7 @@ const Home = () => {
                   letterSpacing: 1,
                 }}
               >
-                Welcome to Our Agency
+                Sửa chữa điện Phương Vinh
               </Typography>
             </Paper>
             <Typography
@@ -72,7 +72,7 @@ const Home = () => {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              We are a creative digital agency
+              Dịch vụ điện lạnh & xây dựng chuyên nghiệp
             </Typography>
             <Typography
               variant="h5"
@@ -83,9 +83,9 @@ const Home = () => {
                 lineHeight: 1.6,
               }}
             >
-              We help ambitious businesses like yours generate more profits by
-              building awareness, driving web traffic, connecting with
-              customers, and growing overall sales.
+              Chuyên cung cấp dịch vụ lắp đặt và bảo trì máy lạnh, hệ thống
+              điện, xây dựng và thang máy gia đình với đội ngũ kỹ thuật viên
+              chuyên nghiệp, tận tâm.
             </Typography>
             <Box
               sx={{
@@ -114,7 +114,7 @@ const Home = () => {
                   },
                 }}
               >
-                Get Started
+                Liên hệ ngay
               </Button>
               <Button
                 variant="outlined"
@@ -147,7 +147,7 @@ const Home = () => {
                   },
                 }}
               >
-                Watch Video
+                Xem dịch vụ
               </Button>
             </Box>
           </Box>

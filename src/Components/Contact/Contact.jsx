@@ -9,7 +9,6 @@ import {
   Stack,
   IconButton,
 } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
@@ -58,7 +57,7 @@ const Contact = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Get In Touch
+            Liên Hệ
           </Typography>
           <Grid container spacing={6}>
             <Grid item xs={12} md={5}>
@@ -70,7 +69,7 @@ const Contact = () => {
                   color: "text.primary",
                 }}
               >
-                Let&apos;s Talk Business
+                Hãy Liên Hệ Với Chúng Tôi
               </Typography>
               <Typography
                 variant="body1"
@@ -80,46 +79,11 @@ const Contact = () => {
                   lineHeight: 1.8,
                 }}
               >
-                Type something very very catchy that will make your potential
-                clients send a message and make further enquiry about your
-                business
+                Chúng tôi luôn sẵn sàng phục vụ quý khách 24/7 với đội ngũ kỹ
+                thuật viên chuyên nghiệp, tận tâm. Hãy liên hệ ngay để được tư
+                vấn và hỗ trợ tốt nhất.
               </Typography>
               <Stack spacing={3}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 2,
-                    p: 2,
-                    borderRadius: 2,
-                    transition: "all 0.3s ease",
-                    "&:hover": {
-                      backgroundColor: "rgba(99,102,241,0.05)",
-                      transform: "translateX(8px)",
-                    },
-                  }}
-                >
-                  <IconButton
-                    sx={{
-                      backgroundColor: "rgba(99,102,241,0.1)",
-                      color: "primary.main",
-                      "&:hover": {
-                        backgroundColor: "primary.main",
-                        color: "white",
-                      },
-                    }}
-                  >
-                    <EmailIcon />
-                  </IconButton>
-                  <Box>
-                    <Typography variant="subtitle2" color="text.secondary">
-                      Email
-                    </Typography>
-                    <Typography variant="body1">
-                      chloegates@gmail.com
-                    </Typography>
-                  </Box>
-                </Box>
                 <Box
                   sx={{
                     display: "flex",
@@ -148,9 +112,9 @@ const Contact = () => {
                   </IconButton>
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">
-                      Phone
+                      Điện thoại
                     </Typography>
-                    <Typography variant="body1">+234678900</Typography>
+                    <Typography variant="body1">096 881 43 50</Typography>
                   </Box>
                 </Box>
                 <Box
@@ -181,9 +145,11 @@ const Contact = () => {
                   </IconButton>
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">
-                      Location
+                      Địa chỉ
                     </Typography>
-                    <Typography variant="body1">LA, Nigeria</Typography>
+                    <Typography variant="body1">
+                      278 Trần Phú, P7, Q5, TP HCM, Ho Chi Minh City, Vietnam
+                    </Typography>
                   </Box>
                 </Box>
               </Stack>
@@ -202,7 +168,7 @@ const Contact = () => {
               <Stack spacing={3} sx={{ width: "100%" }}>
                 <TextField
                   fullWidth
-                  label="Email"
+                  label="Họ và tên"
                   variant="outlined"
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -214,7 +180,7 @@ const Contact = () => {
                 />
                 <TextField
                   fullWidth
-                  label="Subject"
+                  label="Số điện thoại"
                   variant="outlined"
                   sx={{
                     "& .MuiOutlinedInput-root": {
@@ -226,7 +192,7 @@ const Contact = () => {
                 />
                 <TextField
                   fullWidth
-                  label="Message"
+                  label="Nội dung"
                   multiline
                   rows={5}
                   variant="outlined"
@@ -248,14 +214,9 @@ const Contact = () => {
                     textTransform: "none",
                     px: 4,
                     py: 1.5,
-                    transition: "all 0.3s ease",
-                    "&:hover": {
-                      transform: "translateY(-2px)",
-                      boxShadow: "0 8px 16px rgba(99,102,241,0.2)",
-                    },
                   }}
                 >
-                  Send Message
+                  Gửi tin nhắn
                 </Button>
               </Stack>
             </Grid>

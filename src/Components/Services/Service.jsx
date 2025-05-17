@@ -52,7 +52,7 @@ const Service = () => {
               },
             }}
           >
-            Our Services
+            Dịch Vụ
           </Typography>
           <Typography
             variant="h3"
@@ -66,64 +66,87 @@ const Service = () => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            The service we offer is specifically designed to meet your needs
+            Dịch vụ của chúng tôi được thiết kế để đáp ứng nhu cầu của bạn
           </Typography>
         </Box>
 
         <Grid container spacing={5} justifyContent="center">
           {services.map(({ title, desc, image }, idx) => (
-            <Grid item xs={12} sm={6} key={idx}>
-              <Card
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              key={idx}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  alignItems: "center",
-                  p: 4,
-                  borderRadius: 8,
-                  boxShadow: "0 8px 32px rgba(99,102,241,0.12)",
-                  transition: "all 0.3s",
-                  minHeight: 280,
-                  height: "100%",
-                  position: "relative",
-                  overflow: "hidden",
-                  background: "#fff",
-                  width: "100%",
-                  mx: "auto",
-                  "&:hover": {
-                    boxShadow: "0 16px 48px rgba(99,102,241,0.18)",
-                    transform: "translateY(-8px) scale(1.03)",
-                  },
+                  flexGrow: 1,
+                  flexShrink: 0,
+                  minWidth: { xs: "280px", sm: "auto" },
+                  flexBasis: 0,
                 }}
               >
-                {image && (
-                  <CardMedia
-                    component="img"
-                    image={image}
-                    alt={title}
-                    sx={{
-                      width: 180,
-                      height: 180,
-                      borderRadius: 6,
-                      objectFit: "cover",
-                      mb: 1,
-                      boxShadow: "0 6px 24px rgba(99,102,241,0.15)",
-                    }}
-                  />
-                )}
+                <Card
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    p: 4,
+                    borderRadius: 8,
+                    boxShadow: "0 8px 32px rgba(99,102,241,0.12)",
+                    transition: "all 0.3s",
+                    minHeight: 320,
+                    position: "relative",
+                    overflow: "hidden",
+                    background: "#fff",
+                    width: "100%",
+                    "&:hover": {
+                      boxShadow: "0 16px 48px rgba(99,102,241,0.18)",
+                      transform: "translateY(-8px) scale(1.03)",
+                    },
+                    height: "100%",
+                  }}
+                >
+                  {image && (
+                    <CardMedia
+                      component="img"
+                      image={image}
+                      alt={title}
+                      sx={{
+                        width: 180,
+                        height: 180,
+                        borderRadius: 6,
+                        objectFit: "cover",
+                        mb: 1,
+                        boxShadow: "0 6px 24px rgba(99,102,241,0.15)",
+                      }}
+                    />
+                  )}
 
-                <Typography
-                  variant="h5"
-                  sx={{ fontWeight: 700, mb: 0.5, textAlign: "center" }}
-                >
-                  {title}
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ color: "text.secondary", textAlign: "center", mb: 0 }}
-                >
-                  {desc}
-                </Typography>
-              </Card>
+                  <Typography
+                    variant="h5"
+                    sx={{ fontWeight: 700, mb: 0.5, textAlign: "center" }}
+                  >
+                    {title}
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "text.secondary",
+                      textAlign: "center",
+                      flexGrow: 1,
+                    }}
+                  >
+                    {desc}
+                  </Typography>
+                </Card>
+              </Box>
             </Grid>
           ))}
         </Grid>

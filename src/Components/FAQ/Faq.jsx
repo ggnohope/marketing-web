@@ -20,7 +20,7 @@ const Faq = () => {
             fontSize: { xs: "2rem", md: "2.5rem" },
           }}
         >
-          Frequently Asked Questions
+          Câu hỏi thường gặp
         </Typography>
         <AccordionMenu items={menuItems} />
       </Container>
